@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  c-web-server:
+    build:
+      context: .
+    container_name: c-web-server
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/app,rw
